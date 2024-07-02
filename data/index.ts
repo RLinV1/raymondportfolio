@@ -96,4 +96,9 @@ export const navItems = [
       img: "/link.svg",
       link: "https://www.linkedin.com/in/raymond-lin-796b8326b/"
     },
+    {
+      id: 3,
+      img : "/gmail.svg",
+      link: "mailto:rlin7289@example.com"
+    }
   ];

@@ -28,7 +28,7 @@ function Hero() {
                     />
 
                 <p className='text-center md:tracking-normal mb-4 text-sm md:text-lg'>
-                    I&apos;m interested in learning and working with new technologies. 
+                    Aspiring Backend Developer 
                 </p>
                 <Link href="/projects" className='md:mt-10'>
                     <MagicButton 
