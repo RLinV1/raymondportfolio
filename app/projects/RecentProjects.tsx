@@ -14,6 +14,7 @@ const words = [
   },
   {
     text: "Of",
+    className: "dark:text-purple",
   },
   {
     text: "Projects",
@@ -24,11 +25,11 @@ const words = [
 const RecentProjects = () => {
   return (
     <div className='py-20 relative z-0'>
-      <h1 className='heading pt-10'>
-        <div className='flex justify-center items-center'>
+      <div className='heading pt-10'>
+        <div className='flex justify-center items-center text-'>
           <TypewriterEffectSmooth words={words} />
         </div>
-      </h1>
+      </div>
       <div className='flex flex-wrap items-center justify-center p-4
       mt-10 gap-16 lg:gap-x-32
       '>

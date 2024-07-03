@@ -75,7 +75,7 @@ const AboutPage = () => {
         </div>
         <Meteors number={200} />
 
-        <div className='items-center sm:flex py-20 w-full justify-center'> 
+        <div className='items-center sm:flex py-20 w-full justify-center lg:flex-row lg:text-left md:flex-col md:text-center'> 
           {timeLine.map(({ title, desc }) => (
             <div>
               <TimeLine title={title} desc={desc} key={title} />
