@@ -9,6 +9,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import {BoxesCore} from "./BackgroundBoxes";
 
+//
 export const BentoGrid = ({
   className,
   children,
