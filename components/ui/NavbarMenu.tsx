@@ -20,8 +20,8 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
             <HoveredLink href="/">Home</HoveredLink>
             <HoveredLink href="/projects">Projects</HoveredLink>
+            <HoveredLink href="/about">About</HoveredLink>
             <HoveredLink href="#contact">Contact Me</HoveredLink>
-            {/* <HoveredLink href="/">Coming Soon</HoveredLink> */}
       </Menu>
     </div>
   );

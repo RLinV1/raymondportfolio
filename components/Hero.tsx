@@ -24,11 +24,11 @@ function Hero() {
                 </h2>
                 <TextGenerateEffect 
                     className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                    words=' Hi, I&apos;m Raymond, a Computer Science Major at Stony Brook University.'
+                    words=' Hi, I&apos;m Raymond, an aspiring backend developer.'
                     />
 
                 <p className='text-center md:tracking-normal mb-4 text-sm md:text-lg'>
-                    Aspiring Backend Developer 
+                    Interested in new technologies 
                 </p>
                 <Link href="/projects" className='md:mt-10'>
                     <MagicButton 

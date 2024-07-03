@@ -3,11 +3,9 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className='w-full pt-20 pb-5' id="contact">
-        <div className='w-full absolute left-0 bottom-1/4 min-h-10 max-h-20 md:w-0'>
-            <img src="/footer-grid.svg"
-            alt='grid'
-            className='w-full h-full opacity-50' />
+    <footer className='w-full pb-3 pt-14' id="contact">
+        <div className='w-full absolute left-0 bottom-1/4 min-h-10 max-h-20'>
+            
         </div>
         <div className='flex justify-center items-center z-50'>
             <h1 className='heading lg:max-w-[45vw] text-purple z-50'>
