@@ -1,8 +1,21 @@
+"use-client"
 import React from "react";
+import { AnimatedTooltip } from "./AnimatedToolTip";
 
+interface DescriptionItem {
+    id: number;
+    name: string;
+    designation: string;
+    image: string;
+}
+interface TimeLineProps {
+    title: string;
+    desc: DescriptionItem[];
+    otherClassName?: string;
+}
 
 // had to remove the ol for it work
-export const TimeLine = ({title, desc, otherClassName} : {title: string; desc: string;otherClassName?: string}) => {
+export const TimeLine = ({title, desc, otherClassName} : TimeLineProps) => {
     return (
         <div>
             <div className="relative mb-6 sm:mb-0 w-96">
@@ -18,14 +31,8 @@ export const TimeLine = ({title, desc, otherClassName} : {title: string; desc: s
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                         {title}
                     </h3>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                        {desc}
-                    </p>
                 </div>
             </div>
-            
-            
-            
         </div>
         
     );

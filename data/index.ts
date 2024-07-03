@@ -90,11 +90,99 @@ export const navItems = [
   ];
   
   export const timeLine = [
-    { title: "Languages", desc: "Java, Javascript, Python, C" },
-    { title: "Libraries/Frameworks", desc: "Next.js, React.js, LibGDX" },
-    { title: "Other Technolgies", desc: "Docker, GraphQL, PostgreSQL, MySQL" },
-
-    // Other timeline items
+    { title: "Languages", desc: [
+      {
+        id: 1,
+        name: "Java",
+        designation: "2021",
+        image:
+          "/java.svg",
+      },
+      {
+        id: 2,
+        name: "JavaScript",
+        designation: "2022",
+        image:
+          "/js.svg",
+      },
+      {
+        id: 3,
+        name: "Python",
+        designation: "2022",
+        image:
+          "/python.svg",
+      },
+      {
+        id: 4,
+        name: "Bash",
+        designation: "2023",
+        image:
+          "/bash.svg",
+      },
+      {
+        id: 5,
+        name: "C",
+        designation: "2023",
+        image:
+          "/c.svg",
+      },
+    ]},
+    {
+      title: "Libraries/Frameworks",  desc: [
+        {
+          id: 1,
+          name: "LibGDX",
+          designation: "2022",
+          image:
+            "/libgdx.svg",
+        },
+        {
+          id: 2,
+          name: "React.js",
+          designation: "2023",
+          image:
+            "/react.svg",
+        },
+        {
+          id: 3,
+          name: "Next.js",
+          designation: "2024",
+          image:
+            "/next.svg",
+        },
+        {
+          id: 4,
+          name: "Apollo Server",
+          designation: "2024",
+          image: 
+          "/apollo.png",
+        },
+      ]
+    }, {
+      title: "Other Technologies", desc: [
+        {
+          id: 1,
+          name: "MySQL",
+          designation: "2023",
+          image:
+            "/mysql.svg",
+        },
+        {
+          id: 2,
+          name: "GraphQL",
+          designation: "2024",
+          image:
+            "/graphql.svg",
+        },
+        {
+          id: 3,
+          name: "Docker",
+          designation: "2024",
+          image:
+            "/docker.svg",
+        }
+      ]
+    }
   ];
   export const socialMedia = [
     {
