@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider"
-
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Raymond's Portfolio",
-  description: "Modern and Minimal JS Portfolio",
+  description: "Minimalistic Portfolio",
 };
 
 export default function RootLayout({
@@ -25,7 +26,11 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <Analytics />
+            <SpeedInsights />     
         </ThemeProvider>
+       
+
       </body>
     </html>
   );
