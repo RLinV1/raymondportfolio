@@ -9,9 +9,7 @@ export default function About() {
       overflow-hidden mx-auto sm:px-10 px-5"
       >
         <div className="max-w-7xl w-full" id="about">
-            <NavbarDemo />
             <AboutPage />
-            <Footer />
         </div>
       </main>
     );
