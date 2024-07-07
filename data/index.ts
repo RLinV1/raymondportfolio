@@ -63,11 +63,11 @@ export const navItems = [
     {
       id: 2,
       title: "Movie App",
-      des: "Designed an app that utilizes a MongoDB database that stores reviews on movies",
+      des: "An app for reviewing movies",
       img: "/movie.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
       link: "https://movie-app-frontend-eta.vercel.app",
-      date: 2023
+      date: 2024
     },
     {
       id: 3,
