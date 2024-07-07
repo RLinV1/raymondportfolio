@@ -3,16 +3,16 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className='w-full pb-3 pt-14' id="contact">
+    <footer className='w-full pb-3 pt-14 bg-black-100`' id="contact">
         <div className='w-full absolute left-0 bottom-1/4 min-h-10 max-h-20'>
             
         </div>
-        <div className='flex justify-center items-center z-50'>
+        <div className='flex justify-center items-center z-50 mt-10'>
             <h1 className='heading lg:max-w-[45vw] text-purple z-50'>
                 Contact Me
             </h1>
         </div>
-        <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
+        <div className='flex mt-16 md:flex-row flex-col justify-between items-center mx-10'>
             <p className='md:text-base text-sm md:font-normal font-light z-50'>
                 Copyright &copy; Raymond 2024
             </p>

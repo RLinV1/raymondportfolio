@@ -62,11 +62,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Pokemon Guessing Game",
-      des: "Designed a simple Javascript guessing game that utilizes the PokeAPI",
-      img: "/poke.png",
-      iconLists: ["/html.svg", "/css.svg", "/js.svg"],
-      link: "https://github.com/ZaRamen/JS-Project-7",
+      title: "Movie App",
+      des: "Designed an app that utilizes a MongoDB database that stores reviews on movies",
+      img: "/movie.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
+      link: "https://github.com/ZaRamen/Movie-App-FullStack",
       date: 2023
     },
     {

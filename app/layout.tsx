@@ -20,16 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}> 
+      <body className={`bg-black-200 ${inter.className}`}> 
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            <NavbarDemo />
+            {/* Check vercel to see the rollback. Putting the navbar here is better but im too lazy to fix the 
+            bg color issue */}
             {children}
-            <Footer />
             <Analytics />
             <SpeedInsights />     
         </ThemeProvider>
