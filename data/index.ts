@@ -66,7 +66,7 @@ export const navItems = [
       des: "Designed an app that utilizes a MongoDB database that stores reviews on movies",
       img: "/movie.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
-      link: "https://github.com/ZaRamen/Movie-App-FullStack",
+      link: "https://movie-app-frontend-eta.vercel.app",
       date: 2023
     },
     {
