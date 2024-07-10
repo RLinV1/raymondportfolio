@@ -66,7 +66,7 @@ export const navItems = [
       des: "An app for reviewing movies",
       img: "/movie.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
-      link: "https://movie-app-frontend-eta.vercel.app",
+      link: "https://github.com/ZaRamen/Movie-App-Backend",
       date: 2024
     },
     {
