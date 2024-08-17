@@ -53,20 +53,20 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Portfolio Website",
-      des: "You're on this website right now!",
-      img: "/portfolio.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/ZaRamen/Portfolio",
+      title: "Meal Plan Tracker",
+      des: "An app for tracking meals and expenses",
+      img: "/mealplan.png",
+      iconLists: ["/re.svg", "/firebase.svg", "/python.svg", "/tail.svg", "/js.svg"],
+      link: "https://meal-plan-tracker.vercel.app",
       date: 2024
     },
     {
       id: 2,
-      title: "Movie App",
-      des: "An app for reviewing movies",
-      img: "/movie.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/java.svg", "/spring.svg", "/mongodb.svg"],
-      link: "https://github.com/ZaRamen/Movie-App-Backend",
+      title: "Reddit Short Maker",
+      des: "An app for generating Reddit Shorts",
+      img: "/reddit.png",
+      iconLists: ["/python.svg", "/openai.svg"],
+      link: "https://github.com/ZaRamen/Reddit-Shorts-Maker",
       date: 2024
     },
     {
