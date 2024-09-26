@@ -188,7 +188,7 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-      link: "https://github.com/ZaRamen"
+      link: "https://github.com/RLinV1"
     },
     {
       id: 2 ,
