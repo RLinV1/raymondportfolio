@@ -169,18 +169,34 @@ export const navItems = [
         },
         {
           id: 2,
+          name: "MongoDB",
+          designation: "2023",
+          image:
+            "/mongodb.svg",
+        },
+        {
+          id: 3,
           name: "GraphQL",
           designation: "2024",
           image:
             "/graphql.svg",
         },
         {
-          id: 3,
+          id: 4,
           name: "Docker",
           designation: "2024",
           image:
             "/docker.svg",
+        },
+        {
+          id: 5,
+          name: "Firebase",
+          designation: "2024",
+          image:
+            "/firebase.svg",
         }
+        
+              
       ]
     }
   ];
