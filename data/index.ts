@@ -62,11 +62,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Reddit Short Maker",
-      des: "An app for generating Reddit Shorts",
+      title: "Blog Website",
+      des: "An app for sharing and posting blogs",
       img: "/reddit.png",
-      iconLists: ["/python.svg", "/openai.svg"],
-      link: "https://github.com/ZaRamen/Reddit-Shorts-Maker",
+      iconLists: ["/re.svg", "/tail.svg", "mongodb.svg"],
+      link: "https://blog-website-sooty-chi.vercel.app",
       date: 2024
     },
     {
@@ -75,7 +75,7 @@ export const navItems = [
       des: "A endless bullet hell game inspired by the game Boxhead",
       img: "/infected.png",
       iconLists: ["/java.svg", "/libgdx.svg"],
-      link: "https://github.com/ZaRamen/Survive-the-Infected",
+      link: "https://github.com/RLinV1/Survive-the-Infected",
       date: 2022
     },
     {
@@ -84,7 +84,7 @@ export const navItems = [
       des: "Is a clone of the popular flash game World's Hardest Game. ",
       img: "/hardestGame.png",
       iconLists: ["/java.svg"],
-      link: "https://github.com/ZaRamen/World-Hardest-Game-Clone",
+      link: "https://github.com/RLinV1/World-Hardest-Game-Clone",
       date: 2021
     },
   ];
