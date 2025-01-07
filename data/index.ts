@@ -64,8 +64,8 @@ export const navItems = [
       id: 2,
       title: "Blog Website",
       des: "An app for sharing and posting blogs",
-      img: "/reddit.png",
-      iconLists: ["/re.svg", "/tail.svg", "mongodb.svg"],
+      img: "/blog.png",
+      iconLists: ["/re.svg", "/tail.svg", "mongodb.svg", "supabase.svg", "express.svg", "node.svg"],
       link: "https://blog-website-sooty-chi.vercel.app",
       date: 2024
     },
