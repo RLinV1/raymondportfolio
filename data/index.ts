@@ -30,7 +30,7 @@ export const navItems = [
   
     {
       id: 3,
-      title: "Currently Learning C",
+      title: "Currently Working On Projects",
       description: "What am I working on?",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "absolute -right-14 bottom-0 top-0 lg:-right-32 lg:bottom-0 lg:top-12 md:w-100 w-60 md:h-100 lg:scale-[2.2]",
