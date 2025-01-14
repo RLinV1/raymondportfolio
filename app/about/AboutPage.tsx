@@ -64,8 +64,8 @@ const AboutPage = () => {
             I'm eager to expand my skills in both frontend and backend technologies, with a focus on building comprehensive, full-stack applications.
           </p>
           <p className='mb-3 text-gray-100'>
-            My goal is to become a backend engineer in the coming years after college. Currently
-            working on sharpening my skills learning C and algorithms. Some related hobbies to 
+            My goal is to become a Full Stack engineer in the coming years after college. Currently
+            working on sharpening my skills through full stack applications. Some related hobbies to 
             computer science include game development and design. I've created some games using
             LibGDX, a Java Framework, which utilized 2D pixel art.
           </p>
