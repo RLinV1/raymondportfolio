@@ -61,7 +61,7 @@ const AboutPage = () => {
         <div className='flex justify-between flex-col items-start text-xl py-10 gap-9 '>
           <p className='mb-3 text-gray-100'>
             Hello, I'm from NYC and currently attending Stony Brook University as a Sophmore.
-            I'm interested in backend technologies and learning new programming languages.
+            I'm eager to expand my skills in both frontend and backend technologies, with a focus on building comprehensive, full-stack applications.
           </p>
           <p className='mb-3 text-gray-100'>
             My goal is to become a backend engineer in the coming years after college. Currently
