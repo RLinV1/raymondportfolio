@@ -24,7 +24,7 @@ function Hero() {
                 </h2>
                 <TextGenerateEffect 
                     className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                    words=' Hi, I&apos;m Raymond, an aspiring backend developer.'
+                    words=' Hi, I&apos;m Raymond, an aspiring Full Stack developer.'
                     />
 
                 <p className='text-center md:tracking-normal mb-4 text-sm md:text-lg'>
