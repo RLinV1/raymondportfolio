@@ -57,7 +57,7 @@ export const navItems = [
       des: "An app for tracking meals and expenses",
       img: "/mealplan.png",
       iconLists: ["/re.svg", "/firebase.svg", "/python.svg", "/tail.svg", "/js.svg"],
-      link: "https://meal-plan-tracker.vercel.app",
+      link: "https://github.com/RLinV1/Meal-Plan-Tracker",
       date: 2024
     },
     {
@@ -66,7 +66,7 @@ export const navItems = [
       des: "An app for sharing and posting blogs",
       img: "/blog.png",
       iconLists: ["/re.svg", "/tail.svg", "mongodb.svg", "supabase.svg", "express.svg", "node.svg"],
-      link: "https://blog-website-sooty-chi.vercel.app",
+      link: "https://github.com/RLinV1/Blog-Website",
       date: 2024
     },
     {
