@@ -55,7 +55,7 @@ export const navItems = [
       id: 1,
       title: "Reddit App",
       des: "A Clone of Reddit",
-      img: "/blog.png",
+      img: "/reddit.png",
       iconLists: ["/re.svg", "mongodb.svg", "express.svg", "node.svg"],
       link: "https://github.com/RLinV1/Reddit-App",
       date: 2025
