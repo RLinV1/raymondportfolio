@@ -53,6 +53,15 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
+      title: "Reddit App",
+      des: "A Clone of Reddit",
+      img: "/blog.png",
+      iconLists: ["/re.svg", "mongodb.svg", "express.svg", "node.svg"],
+      link: "https://github.com/RLinV1/Reddit-App",
+      date: 2025
+    },
+    {
+      id: 2,
       title: "Meal Plan Tracker",
       des: "An app for tracking meals and expenses",
       img: "/mealplan.png",
@@ -60,15 +69,7 @@ export const navItems = [
       link: "https://github.com/RLinV1/Meal-Plan-Tracker",
       date: 2024
     },
-    {
-      id: 2,
-      title: "Blog Website",
-      des: "An app for sharing and posting blogs",
-      img: "/blog.png",
-      iconLists: ["/re.svg", "/tail.svg", "mongodb.svg", "supabase.svg", "express.svg", "node.svg"],
-      link: "https://github.com/RLinV1/Blog-Website",
-      date: 2024
-    },
+    ,
     {
       id: 3,
       title: "Survive the Infected",
