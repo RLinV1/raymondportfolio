@@ -69,7 +69,6 @@ export const navItems = [
       link: "https://github.com/RLinV1/Meal-Plan-Tracker",
       date: 2024
     },
-    ,
     {
       id: 3,
       title: "Survive the Infected",
