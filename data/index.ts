@@ -52,21 +52,21 @@ export const navItems = [
   
   export const projects = [
     {
-      id: 0,
-      title: "AI Study App",
-      des: "YT Summarizer and Flashcard generator",
-      img: "/study-app.png",
-      iconLists: ["/re.svg", "next.svg", "tail.svg", "django.svg", "python.svg", ],
-      link: "https://github.com/RLinV1/AI-Study-App",
-      date: 2025
-    },
-    {
       id: 1,
       title: "TBD",
       des: "TBD",
       img: "/hardestGame.png",
       iconLists: ["/java.svg"],
       link: "N/A",
+      date: 2025
+    },
+    {
+      id: 0,
+      title: "AI Study App",
+      des: "YT Summarizer and Flashcard generator",
+      img: "/study-app.png",
+      iconLists: ["/re.svg", "next.svg", "tail.svg", "django.svg", "python.svg", ],
+      link: "https://github.com/RLinV1/AI-Study-App",
       date: 2025
     },
     {
