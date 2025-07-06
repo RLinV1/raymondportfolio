@@ -30,12 +30,12 @@ const RecentProjects = () => {
           <TypewriterEffectSmooth words={words} />
         </div>
       </div>
-      <div className='flex flex-wrap items-center justify-center p-4
-      mt-10 gap-16 lg:gap-x-32
+      <div className='flex flex-wrap items-center justify-center 
+      mt-10 gap-x-24 gap-y-4
       '>
         {projects.map(({id, title, des, img, iconLists, link, date}) => (
           
-          <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full sm:w-96 lg:w-1/3 px-4'>
+          <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full sm:w-96 lg:w-1/3 '>
             <PinContainer title={title} href={link}>
               <div className='relative flex items-center justify-center w-full sm:w-96 overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
