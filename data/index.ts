@@ -52,7 +52,7 @@ export const navItems = [
   
   export const projects = [
     {
-      id: 1,
+      id: 0,
       title: "TBD",
       des: "TBD",
       img: "/hardestGame.png",
@@ -61,7 +61,7 @@ export const navItems = [
       date: 2025
     },
     {
-      id: 0,
+      id: 1,
       title: "AI Study App",
       des: "YT Summarizer and Flashcard generator",
       img: "/study-app.png",
@@ -80,31 +80,13 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Meal Plan Tracker",
-      des: "An app for tracking meals and expenses",
-      img: "/mealplan.png",
-      iconLists: ["/re.svg", "/firebase.svg", "/python.svg", "/tail.svg", "/js.svg"],
-      link: "https://github.com/RLinV1/Meal-Plan-Tracker",
-      date: 2024
-    },
-    {
-      id: 4,
       title: "Survive the Infected",
       des: "A endless bullet hell game inspired by the game Boxhead",
       img: "/infected.png",
       iconLists: ["/java.svg", "/libgdx.svg"],
       link: "https://github.com/RLinV1/Survive-the-Infected",
       date: 2022
-    },
-    {
-      id: 5,
-      title: "World's Hardest Game Clone",
-      des: "Is a clone of the popular flash game World's Hardest Game. ",
-      img: "/hardestGame.png",
-      iconLists: ["/java.svg"],
-      link: "https://github.com/RLinV1/World-Hardest-Game-Clone",
-      date: 2021
-    },
+    }
     
   ];
   
