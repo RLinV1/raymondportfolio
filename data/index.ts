@@ -53,11 +53,11 @@ export const navItems = [
   export const projects = [
     {
       id: 0,
-      title: "TBD",
-      des: "TBD",
-      img: "/hardestGame.png",
-      iconLists: ["/java.svg"],
-      link: "N/A",
+      title: "CS Match Predictor",
+      des: "Match Predictor for CS matches",
+      img: "/match-predictor.png",
+      iconLists: ["/python.svg"],
+      link: "https://github.com/RLinV1/CS-Match-Predictor",
       date: 2025
     },
     {
