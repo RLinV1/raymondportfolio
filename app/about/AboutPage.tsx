@@ -16,12 +16,12 @@ const AboutPage = () => {
       </h1>
         <div className='flex justify-between flex-col items-start text-xl py-10 gap-9 '>
           <p className='mb-3 text-gray-100'>
-            Hello, I'm from NYC and currently attending Stony Brook University as a Sophmore.
+            Hello, I'm from NYC and currently attending Stony Brook University as a Junior.
             I'm eager to expand my skills in both frontend and backend technologies, with a focus on building comprehensive, full-stack applications.
           </p>
           <p className='mb-3 text-gray-100'>
             My goal is to become a Full Stack engineer in the coming years after college. Currently
-            working on sharpening my skills through creating full stack applications. Some related hobbies to 
+            working on sharpening my skills through creating full stack applications and AI. Some related hobbies to 
             computer science include game development and design. I've created some games using
             LibGDX, a Java Framework, which utilized 2D pixel art.
           </p>

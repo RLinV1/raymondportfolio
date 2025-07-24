@@ -31,7 +31,7 @@ const RecentProjects = () => {
         </div>
       </div>
       <div className='flex flex-wrap items-center justify-center 
-      mt-10 gap-x-24 gap-y-4
+      mt-10 gap-x-12 gap-y-4 
       '>
         {projects.map(({id, title, des, img, iconLists, link, date}) => (
           
