@@ -72,11 +72,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Reddit App",
-    des: "A Clone of Reddit",
-    img: "/reddit.png",
-    iconLists: ["/re.svg", "mongodb.svg", "express.svg", "node.svg"],
-    link: "https://github.com/RLinV1/Reddit-App",
+    title: "Stock Trading App",
+    des: "A Mock Stock Trading App",
+    img: "/stock-app.png",
+    iconLists: ["/next.svg", "postgresql-icon.svg", "ts.svg", "java.svg"],
+    link: "https://github.com/RLinV1/Stock-Trading-App",
     date: 2025,
   },
   {
