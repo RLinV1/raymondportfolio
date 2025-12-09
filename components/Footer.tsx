@@ -14,7 +14,7 @@ export const Footer = () => {
         </div>
         <div className='flex mt-16 md:flex-row flex-col justify-between items-center mx-10'>
             <p className='md:text-base text-sm md:font-normal font-light z-50'>
-                Copyright &copy; Raymond 2024
+                Copyright &copy; Raymond 2025
             </p>
             <div className='flex items-center md:gap-3 lg:gap-6 mt-3 '>
                 {socialMedia.map((profile) => (
