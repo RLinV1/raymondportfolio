@@ -54,11 +54,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 0,
-    title: "CS Match Predictor",
-    des: "Match Predictor for CS matches",
-    img: "/match-predictor.png",
-    iconLists: ["/python.svg"],
-    link: "https://github.com/RLinV1/CS-Match-Predictor",
+    title: "Plutus",
+    des: "AI-native stock research with RAG, MCP tools, and autonomous agent",
+    img: "/plutus.png",
+    iconLists: ["/python.svg", "/re.svg", "/ts.svg", "/anthropic.svg", "/clerk.svg"],
+    link: "https://plutustrading.tech",
     date: 2025,
   },
   {
