@@ -2,8 +2,6 @@
 import { cn } from "@/utils/cn";
 import { GlobeDemo } from "./GridGlobe";
 import { useEffect, useState } from "react";
-import animationData from '@/data/confetti.json'
-import Lottie from 'react-lottie';
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import {BoxesCore} from "./BackgroundBoxes";
@@ -149,21 +147,7 @@ export const BentoGridItem = ({
             )}
             {id == 4 && (
               <div className="mt-5 relative mx-auto">
-                  <div className={`absolute -bottom-5 right-0`}>
-                  {(
-                    <Lottie
-                      options={{
-                        loop: copied,
-                        autoplay: copied,
-                        animationData: animationData,
-                        rendererSettings: {
-                          preserveAspectRatio: 'xMidYMid slice'
-                        }
-                      }}
-                    />
-                  )}
-                  </div>
-                  <MagicButton 
+                  <MagicButton
                     title={copied ? 'Email copied' : 'Copy my email'}
                     icon={<IoCopyOutline />}
                     position="left"
