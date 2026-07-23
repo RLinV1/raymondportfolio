@@ -1,34 +1,42 @@
-import { socialMedia } from '@/data'
-import React from 'react'
+import { socials } from "@/data";
+import { Section } from "./Section";
 
-export const Footer = () => {
+export function Footer() {
   return (
-    <footer className='w-full pb-3 pt-14 bg-black-100`' id="contact">
-        <div className='w-full absolute left-0 bottom-1/4 min-h-10 max-h-20'>
-            
-        </div>
-        <div className='flex justify-center items-center z-50 mt-10'>
-            <h1 className='heading lg:max-w-[45vw] text-purple z-50'>
-                Contact Me
-            </h1>
-        </div>
-        <div className='flex mt-16 md:flex-row flex-col justify-between items-center mx-10'>
-            <p className='md:text-base text-sm md:font-normal font-light z-50'>
-                Copyright &copy; Raymond 2025
-            </p>
-            <div className='flex items-center md:gap-3 lg:gap-6 mt-3 '>
-                {socialMedia.map((profile) => (
-                    <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center
-                    backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200
-                    rounded-lg border border-black-300'>
-                        <a href={profile.link}>
-                            <img src={profile.img} alt={"socials"} width={20} height={20} />
-                        </a>
-                    </div>
-                ))}
-            </div>
-        </div>
-    
+    <footer>
+      <Section id="contact" label="Contact">
+        <p className="max-w-[44rem] text-lg leading-relaxed text-ink-mid">
+          Open to internship and new-grad opportunities. If you&apos;d like to
+          talk about a role, a project, or anything I&apos;ve built, my inbox
+          is open.
+        </p>
+        <a
+          href="mailto:rlin7289@gmail.com"
+          className="mt-6 inline-block text-2xl font-medium text-ink underline decoration-amber/50 underline-offset-8 transition-colors hover:text-amber sm:text-3xl"
+        >
+          rlin7289@gmail.com
+        </a>
+      </Section>
+
+      <div className="flex flex-col items-start justify-between gap-3 border-t border-line py-8 sm:flex-row sm:items-center">
+        <p className="font-mono text-[13px] text-ink-dim">
+          © 2026 Raymond Lin
+        </p>
+        <ul className="flex gap-6">
+          {socials.map((s) => (
+            <li key={s.name}>
+              <a
+                href={s.link}
+                target={s.link.startsWith("http") ? "_blank" : undefined}
+                rel="noreferrer"
+                className="font-mono text-[13px] text-ink-dim transition-colors hover:text-amber"
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </footer>
-  )
+  );
 }

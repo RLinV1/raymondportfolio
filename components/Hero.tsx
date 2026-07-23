@@ -1,47 +1,70 @@
-import React from 'react'
-import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import MagicButton from './ui/MagicButton'
-import { FaLocationArrow } from "react-icons/fa";
-import Link from 'next/link';
-function Hero() {
+import Link from "next/link";
+import { hero, socials } from "@/data";
+import { Reveal } from "./Reveal";
+
+export function Hero() {
   return (
-    <div className='pb-20 pt-36'>
-        <div>
-            <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
-            <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='blue'/>
-            <Spotlight className='top-10 left-1/3 h-[80vh] w-[50vw]' fill='purple'/>
-        </div>
-
-        <div className="h-[50rem] w-full dark:bg-black-100 bg-white  dark:bg-dot-white/[0.15] bg-dot-black/[0.2] 
-         flex items-center justify-center absolute top-0 left-0">
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 
-            bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-        </div>
-        <div className='flex justify-center relative my-20 z-10'>
-            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                </h2>
-                <TextGenerateEffect 
-                    className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                    words=' Hi, I&apos;m Raymond, an aspiring Full Stack developer.'
-                    />
-
-                <p className='text-center md:tracking-normal mb-4 text-sm md:text-lg'>
-                    Interested in new technologies 
-                </p>
-                <Link href="/projects" className='md:mt-10'>
-                    <MagicButton 
-                        title="Show My Work"
-                        icon={<FaLocationArrow />}
-                        position={'right'}
-                    />
-                </Link>
-            </div>
-        </div>
-
-    </div>
-  )
+    <section className="relative pb-16 pt-36 sm:pb-20 sm:pt-44">
+      <div
+        aria-hidden
+        className="hero-wash pointer-events-none absolute left-1/2 top-0 h-full w-screen -translate-x-1/2"
+      />
+      <div className="relative">
+        <Reveal>
+          <p className="mb-5 font-mono text-[13px] uppercase tracking-[0.2em] text-amber">
+            {hero.eyebrow}
+          </p>
+          <h1 className="text-4xl font-semibold tracking-tight text-ink [text-wrap:balance] sm:text-5xl">
+            {hero.name}
+          </h1>
+        </Reveal>
+        <Reveal delay={120}>
+          <p className="mt-5 max-w-[44rem] text-lg leading-relaxed text-ink sm:text-xl">
+            {hero.lede}
+          </p>
+          <p className="mt-4 max-w-[44rem] leading-relaxed text-ink-mid">
+            {hero.bio}
+          </p>
+        </Reveal>
+        <Reveal delay={240}>
+          <p className="mt-8 font-mono text-[13px] leading-relaxed text-ink-dim">
+            <span className="mr-2 select-none text-amber">$</span>
+            <span className="text-ink-mid">{hero.status}</span>
+          </p>
+          <p className="caret mt-2 font-mono text-[13px] leading-relaxed text-ink-dim">
+            <span className="mr-2 select-none text-sage">~</span>
+            <span className="text-ink-mid">{hero.now}</span>
+          </p>
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <Link
+              href="/experience"
+              className="group inline-flex items-center gap-2.5 rounded-lg border border-amber/40 bg-amber/10 px-6 py-3 text-base font-medium text-ink transition-colors hover:border-amber hover:bg-amber/15 hover:text-amber"
+            >
+              View experience
+              <span
+                aria-hidden
+                className="inline-block text-lg transition-transform group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+          </div>
+          <ul className="mt-8 flex flex-wrap gap-x-7 gap-y-2">
+            {socials.map((s) => (
+              <li key={s.name}>
+                <a
+                  href={s.link}
+                  target={s.link.startsWith("http") ? "_blank" : undefined}
+                  rel="noreferrer"
+                  className="font-mono text-sm text-cobalt underline decoration-cobalt/40 underline-offset-4 transition-colors hover:text-amber hover:decoration-amber"
+                >
+                  {s.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+      </div>
+    </section>
+  );
 }
-
-export default Hero

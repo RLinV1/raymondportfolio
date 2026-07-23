@@ -1,14 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import { ThemeProvider } from "./provider"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
-  title: "Raymond's Portfolio",
-  description: "Minimalistic Portfolio",
+  title: "Raymond Lin | Software Engineer",
+  description:
+    "Software engineer building full-stack systems and AI developer tooling. CS Honors @ Stony Brook University.",
 };
 
 export default function RootLayout({
@@ -17,22 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`bg-black-200 ${inter.className}`}> 
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {/* Check vercel to see the rollback. Putting the navbar here is better but im too lazy to fix the 
-            bg color issue */}
-            {children}
-            <Analytics />
-            <SpeedInsights />     
+    <html
+      lang="en"
+      className={`${sans.variable} ${mono.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="bg-ground font-sans text-ink-mid antialiased">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          {children}
         </ThemeProvider>
-       
-
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

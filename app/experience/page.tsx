@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
-import { Projects } from "@/components/Projects";
+import { Experience } from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Projects | Raymond Lin",
-  description: "Selected projects by Raymond Lin.",
+  title: "Experience | Raymond Lin",
+  description: "Work experience of Raymond Lin.",
 };
 
-export default function ProjectsPage() {
+export default function ExperiencePage() {
   return (
     <>
       <Nav />
       <main className="mx-auto max-w-page px-6 pt-20">
-        <Projects />
+        <Experience />
         <Footer />
       </main>
     </>

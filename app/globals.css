@@ -2,89 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-/* testing */
 @layer base {
+  /* light (default) */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
+    --ground: 246 247 249;
+    --panel: 234 238 242;
+    --line: rgba(26, 34, 45, 0.12);
+    --ink: 26 34 45;
+    --ink-mid: 69 81 94;
+    --ink-dim: 107 118 131;
+    --amber: 158 106 28;
+    --cobalt: 38 99 168;
+    --sage: 44 122 87;
   }
 
+  /* dark */
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --ground: 14 17 22;
+    --panel: 20 25 34;
+    --line: rgba(231, 235, 240, 0.08);
+    --ink: 231 235 240;
+    --ink-mid: 154 165 177;
+    --ink-dim: 95 107 120;
+    --amber: 227 178 95;
+    --cobalt: 125 170 217;
+    --sage: 121 179 146;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border !scroll-smooth;
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  /* light mode: a soft, fixed multi-hue wash so the page reads warmer and
+     more colorful without touching the dark theme — with a hint of blue */
+  html:not(.dark) body {
+    background-image:
+      radial-gradient(44rem 32rem at 0% 0%, rgb(var(--amber) / 0.1), transparent 60%),
+      radial-gradient(50rem 36rem at 100% 2%, rgb(var(--cobalt) / 0.16), transparent 60%),
+      radial-gradient(60rem 46rem at 50% 108%, rgb(var(--cobalt) / 0.09), transparent 64%),
+      radial-gradient(52rem 40rem at 50% 100%, rgb(var(--sage) / 0.07), transparent 62%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
-  button {
-    @apply active:outline-none;
+
+  ::selection {
+    background: rgb(var(--amber) / 0.25);
+    color: rgb(var(--ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--amber));
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
 @layer utilities {
-  .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+  /* faint two-tone color wash behind the hero */
+  .hero-wash {
+    background:
+      radial-gradient(56rem 26rem at 12% -4rem, rgb(var(--amber) / 0.09), transparent 62%),
+      radial-gradient(48rem 22rem at 88% -2rem, rgb(var(--cobalt) / 0.09), transparent 62%);
   }
 
-  .black-gradient {
-    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  /* light mode leans a little more into the blue */
+  html:not(.dark) .hero-wash {
+    background:
+      radial-gradient(56rem 26rem at 12% -4rem, rgb(var(--amber) / 0.11), transparent 62%),
+      radial-gradient(52rem 24rem at 88% -2rem, rgb(var(--cobalt) / 0.2), transparent 62%);
+  }
+
+  /* terminal-style caret used in the hero status line */
+  .caret::after {
+    content: "▍";
+    margin-left: 0.15em;
+    color: rgb(var(--amber));
+    animation: blink 1.2s steps(2, start) infinite;
+  }
+
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    .caret::after {
+      animation: none;
+    }
   }
 }
