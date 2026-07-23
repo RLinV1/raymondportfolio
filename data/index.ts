@@ -13,7 +13,7 @@ export const hero = {
   eyebrow: "Software Engineer · New York",
   name: "Raymond Lin",
   lede: "I build full-stack systems and AI developer tooling, from backend services and cloud infrastructure to agentic pipelines.",
-  bio: "Computer Science Honors student at Stony Brook University (GPA 3.87, 5x Dean's List). I work across the stack, with a focus on distributed backends, Kubernetes-based platforms, and LLM-driven automation.",
+  bio: "Computer Science Honors student at Stony Brook University. I work across the stack, with a focus on distributed backends, Kubernetes-based platforms, and LLM-driven automation.",
   status: "SDE Intern @ Clearwater Analytics",
   now: "Going deeper on AI and building agentic projects.",
 };
