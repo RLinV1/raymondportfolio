@@ -43,6 +43,16 @@ export const experience = [
     tech: ["Go", "PostgreSQL", "GraphQL", "Kubernetes", "Angular", "MCP"],
   },
   {
+    company: "IntelHawk",
+    role: "Software Developer",
+    period: "Jan 2026 - Mar 2026",
+    points: [
+      "Built an alert system on Next.js API routes and MongoDB that monitors social media posts against user-defined keywords and notifies users via NodeMailer SMTP and QStash.",
+      "Developed a reporting system enabling users to generate target profile reports surfacing summary findings, top matching posts with source links, timestamps, and risk scores, with deduplication across alert cycles.",
+    ],
+    tech: ["Next.js", "MongoDB", "NodeMailer", "QStash"],
+  },
+  {
     company: "CodePath",
     role: "AI301 Student",
     period: "Jun 2026 - Present",
