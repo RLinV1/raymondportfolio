@@ -40,7 +40,7 @@ import {
 import { FaJava } from "react-icons/fa";
 
 // Map a technology label (case-insensitive) to a brand icon. Anything not in
-// the map renders without an icon — the label alone still shows.
+// the map renders without an icon; the label alone still shows.
 const ICONS: Record<string, IconType> = {
   kotlin: SiKotlin,
   quarkus: SiQuarkus,

@@ -24,7 +24,7 @@ export const experience = [
     role: "Software Development Engineer Intern",
     period: "Jun 2026 - Present",
     points: [
-      "Owned a full-stack product end-to-end — design, implementation, testing, and security review — applying agentic AI to reduce manual operational work.",
+      "Owned a full-stack product end-to-end, from design and implementation to testing and security review, applying agentic AI to reduce manual operational work.",
       "Integrated MCP servers and Claude to automate internal diagnostics and root-cause workflows.",
       "Built backend services in Kotlin with Quarkus and Caffeine caching across data stores; deployed to EKS with CloudBees and ArgoCD.",
       "Helped own a Python service on AWS end-to-end, from design doc to code review, automating previously manual work alongside Clearwater software engineers.",
@@ -38,7 +38,7 @@ export const experience = [
     points: [
       "Led backend development of a core scheduling service in Go and PostgreSQL on Docker and Kubernetes, achieving 96% uptime for 300+ staff and 5,800+ students.",
       "Collaborated with 5+ engineers in a cross-functional Scrum environment on a Kubernetes-based deployment platform, contributing to the policy-based authorization system.",
-      "Maintaining Resin — testing and fixing a Go/GraphQL architecture graph exposed to AI coding agents over MCP, with an Angular and Cytoscape.js front end.",
+      "Maintaining Resin: testing and fixing a Go/GraphQL architecture graph exposed to AI coding agents over MCP, with an Angular and Cytoscape.js front end.",
     ],
     tech: ["Go", "PostgreSQL", "GraphQL", "Kubernetes", "Angular", "MCP"],
   },
@@ -114,15 +114,15 @@ export const projects: Project[] = [
     title: "Flow",
     year: "2026",
     description:
-      "Multi-agent SDLC pipeline: seven Claude agents turn a Jira ticket into reviewed, tested code and an OWASP Top 10-mapped security report, streaming every agent's output live over SSE. Deployed to k3s via ArgoCD GitOps with a GitHub Actions CI/CD pipeline.",
-    tech: ["Python", "FastAPI", "Claude API", "React", "PostgreSQL", "Kubernetes"],
-    link: "https://github.com/RLinV1",
+      "Multi-agent SDLC platform where users compose their own agent pipelines: chained Claude agents turn a Jira ticket into reviewed, tested code and an OWASP Top 10-mapped security report, streaming every agent's output live over SSE. Built and tested through a GitHub Actions CI/CD pipeline.",
+    tech: ["Python", "FastAPI", "Claude API", "React", "PostgreSQL", "Docker"],
+    link: "https://github.com/RLinV1/Flow-Agentic",
   },
   {
     title: "Plutus",
     year: "2026",
     description:
-      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine.",
+      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine. Deployed on AWS Elastic Beanstalk through an automated CI/CD pipeline.",
     tech: ["Python", "MCP", "RAG", "FastAPI", "React", "AWS"],
     link: "https://plutustrading.tech",
     repo: "https://github.com/RLinV1/Plutus",
@@ -142,7 +142,7 @@ export const building: Project[] = [
     title: "Plutus",
     year: "2026",
     description:
-      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine.",
+      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine. Deployed on AWS Elastic Beanstalk through an automated CI/CD pipeline.",
     tech: ["Python", "MCP", "RAG", "FastAPI", "React", "AWS"],
     link: "https://plutustrading.tech",
     repo: "https://github.com/RLinV1/Plutus",

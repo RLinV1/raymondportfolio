@@ -35,7 +35,7 @@
   }
 
   /* light mode: a soft, fixed multi-hue wash so the page reads warmer and
-     more colorful without touching the dark theme — with a hint of blue */
+     more colorful without touching the dark theme, with a hint of blue */
   html:not(.dark) body {
     background-image:
       radial-gradient(44rem 32rem at 0% 0%, rgb(var(--amber) / 0.1), transparent 60%),
