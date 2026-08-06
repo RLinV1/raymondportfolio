@@ -20,18 +20,6 @@ export const hero = {
 
 export const experience = [
   {
-    company: "Clearwater Analytics",
-    role: "Software Development Engineer Intern",
-    period: "Jun 2026 - Present",
-    points: [
-      "Owned a full-stack product end-to-end, from design and implementation to testing and security review, applying agentic AI to reduce manual operational work.",
-      "Integrated MCP servers and Claude to automate internal diagnostics and root-cause workflows.",
-      "Built backend services in Kotlin with Quarkus and Caffeine caching across data stores; deployed to EKS with CloudBees and ArgoCD.",
-      "Helped own a Python service on AWS end-to-end, from design doc to code review, automating previously manual work alongside Clearwater software engineers.",
-    ],
-    tech: ["Kotlin", "Quarkus", "Python", "AWS", "Terraform", "Claude", "MCP", "EKS", "ArgoCD"],
-  },
-  {
     company: "SwiftControl Systems",
     role: "Software Engineer",
     period: "Nov 2022 - Present",
@@ -43,6 +31,37 @@ export const experience = [
     tech: ["Go", "PostgreSQL", "GraphQL", "Kubernetes", "Angular", "MCP"],
   },
   {
+    company: "Clearwater Analytics",
+    role: "Software Development Engineer Intern",
+    period: "Jun 2026 - Aug 2026",
+    points: [
+      "Built a full-stack agentic AI monitoring system end-to-end, replacing manual triage across several data sources.",
+      "Integrated MCP servers and Claude to automate root-cause analysis on data ingestion failures, interpreting OpenSearch logs and Dynatrace metrics.",
+      "Built backend services in Kotlin with Quarkus, adding Caffeine caching and correlating failure signals across a mix of SQL and NoSQL stores handling large-scale datasets.",
+      "Automated root-cause identification and fix suggestions with Claude, then deployed the service to EKS with CI/CD automation via CloudBees and ArgoCD.",
+    ],
+    tech: [
+      "Kotlin",
+      "Quarkus",
+      "Claude",
+      "MCP",
+      "OpenSearch",
+      "Dynatrace",
+      "EKS",
+      "CloudBees",
+      "ArgoCD",
+    ],
+  },
+  {
+    company: "CodePath",
+    role: "AI301 Student",
+    period: "Jun 2026 - Aug 2026",
+    points: [
+      "Contributed to real open-source projects using Claude Code through hands-on experience in AI-assisted development workflows, focused on modern, AI-powered software engineering practices.",
+    ],
+    tech: ["Claude Code", "Open Source", "Git"],
+  },
+  {
     company: "IntelHawk",
     role: "Software Developer",
     period: "Jan 2026 - Mar 2026",
@@ -51,15 +70,6 @@ export const experience = [
       "Developed a reporting system enabling users to generate target profile reports surfacing summary findings, top matching posts with source links, timestamps, and risk scores, with deduplication across alert cycles.",
     ],
     tech: ["Next.js", "MongoDB", "NodeMailer", "QStash"],
-  },
-  {
-    company: "CodePath",
-    role: "AI301 Student",
-    period: "Jun 2026 - Present",
-    points: [
-      "Contributed to real open-source projects using Claude Code through hands-on experience in AI-assisted development workflows, focused on modern, AI-powered software engineering practices.",
-    ],
-    tech: ["Claude Code", "Open Source", "Git"],
   },
   {
     company: "BASTA",
@@ -122,8 +132,8 @@ export const projects: Project[] = [
     title: "Plutus",
     year: "2026",
     description:
-      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine. Deployed on AWS Elastic Beanstalk through an automated CI/CD pipeline.",
-    tech: ["Python", "MCP", "RAG", "FastAPI", "React", "AWS"],
+      "AI financial-advisor assistant that answers plain-English stock and portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, recent news, and a RAG knowledge library. Includes a portfolio analytics engine and a stress-test scenario lab, with a FastAPI backend pushing alerts over WebSocket to React, deployed on AWS via GitHub Actions.",
+    tech: ["Python", "MCP", "RAG", "FastAPI", "WebSocket", "React", "AWS"],
     link: "https://plutustrading.tech",
     repo: "https://github.com/RLinV1/Plutus",
   },
@@ -142,8 +152,8 @@ export const building: Project[] = [
     title: "Plutus",
     year: "2026",
     description:
-      "AI stock research assistant that answers plain-English portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, news, and a RAG knowledge library with a VaR/CVaR, beta, and Sharpe analytics engine. Deployed on AWS Elastic Beanstalk through an automated CI/CD pipeline.",
-    tech: ["Python", "MCP", "RAG", "FastAPI", "React", "AWS"],
+      "AI financial-advisor assistant that answers plain-English stock and portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, recent news, and a RAG knowledge library. Includes a portfolio analytics engine and a stress-test scenario lab, with a FastAPI backend pushing alerts over WebSocket to React, deployed on AWS via GitHub Actions.",
+    tech: ["Python", "MCP", "RAG", "FastAPI", "WebSocket", "React", "AWS"],
     link: "https://plutustrading.tech",
     repo: "https://github.com/RLinV1/Plutus",
   },
