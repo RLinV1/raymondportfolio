@@ -134,8 +134,7 @@ export const projects: Project[] = [
     description:
       "AI financial-advisor assistant that answers plain-English stock and portfolio questions by driving Claude over a 22-tool MCP server, fusing live market data, recent news, and a RAG knowledge library. Includes a portfolio analytics engine and a stress-test scenario lab, with a FastAPI backend pushing alerts over WebSocket to React, deployed on AWS via GitHub Actions.",
     tech: ["Python", "MCP", "RAG", "FastAPI", "WebSocket", "React", "AWS"],
-    link: "https://plutustrading.tech",
-    repo: "https://github.com/RLinV1/Plutus",
+    link: "https://github.com/RLinV1/Plutus",
   },
   {
     title: "Discord Messaging Platform",
